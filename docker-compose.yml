@@ -5,12 +5,14 @@ services:
       container_name: assessment_task
       build: .
       volumes:
-          -   ./app/assets:/usr/local/src/assets
+          - ./app/assets:/usr/local/src/assets
+          # Пример прокидывание файла
+          # - /home/nivanov/example.json:/usr/local/src/assets/upload
       environment:
         # Регулярка для фильтра процессов системы по имени
         PROCESS_REGEXP_FILTER: (gsd-)
         # Режимы работы SYSTEM_ANALYSIS или FILE_ANALYSIS
-        MOD: FILE_ANALYSIS
+        MOD: SYSTEM_ANALYSIS
         # Путь до файла который будет анализироваться
         PATH_FILE_ANALYSIS: /assets/upload/example.json
       pid: host
