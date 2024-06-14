@@ -7,7 +7,7 @@ services:
       volumes:
           - ./app/assets:/usr/local/src/assets
           # Пример прокидывание файла
-          # - /home/nivanov/example.json:/usr/local/src/assets/upload
+          # - /home/nivanov/example.json:/usr/local/src/assets/upload/example.json
       environment:
         # Регулярка для фильтра процессов системы по имени
         PROCESS_REGEXP_FILTER: (gsd-)
