@@ -1,0 +1,12 @@
+[
+    {
+        "Process Name": "winamp.exe",
+        "Process ID": 32,
+        "Is Prime": true
+    },
+    {
+        "Process Name": "antivirus_popova.bin",
+        "Process ID": 64,
+        "Is Prime": true
+    }
+]
